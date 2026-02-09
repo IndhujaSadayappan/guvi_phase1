@@ -1,0 +1,106 @@
+/* Kong section styles */
+
+.kong-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  padding: 80px 20px;
+}
+
+.kong-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  animation: slideInLeft 0.8s ease-out;
+}
+
+.highlight-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--accent);
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.highlight-card:hover {
+  transform: translateX(8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.highlight-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  opacity: 0.15;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.highlight-card h3 {
+  font-size: 1.2rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.highlight-card p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 0;
+}
+
+.kong-description {
+  animation: slideInRight 0.8s ease-out;
+}
+
+.kong-description p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.kong-description p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .kong-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .highlights-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .kong-section {
+    padding: 40px 20px;
+  }
+
+  .kong-content {
+    gap: 1.5rem;
+  }
+
+  .highlights-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .highlight-card {
+    padding: 1.5rem;
+  }
+
+  .kong-description p {
+    font-size: 1rem;
+  }
+}

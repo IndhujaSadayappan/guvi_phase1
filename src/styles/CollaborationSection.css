@@ -1,0 +1,115 @@
+/* Collaboration section styles */
+
+.collaboration-section {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+  color: white;
+  padding: 80px 20px;
+}
+
+.collaboration-section .section-header {
+  color: white;
+}
+
+.collaboration-section .section-header h2 {
+  color: white;
+}
+
+.collaboration-section .section-header h2::after {
+  background: linear-gradient(90deg, var(--accent-light), var(--accent));
+}
+
+.collaboration-section .section-header p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.collaboration-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.collaboration-text {
+  animation: slideInLeft 0.8s ease-out;
+}
+
+.collaboration-text h3 {
+  color: var(--accent-light);
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+}
+
+.collaboration-text p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.benefits-list {
+  animation: slideInRight 0.8s ease-out;
+}
+
+.benefits-list h3 {
+  color: var(--accent-light);
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+}
+
+.benefits-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.benefit-item:last-child {
+  margin-bottom: 0;
+}
+
+.checkmark {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  background: var(--accent-light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-dark);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+  .collaboration-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .collaboration-section {
+    padding: 40px 20px;
+  }
+
+  .collaboration-text h3, .benefits-list h3 {
+    font-size: 1.5rem;
+  }
+
+  .collaboration-text p {
+    font-size: 1rem;
+  }
+
+  .benefit-item {
+    font-size: 0.95rem;
+  }
+}

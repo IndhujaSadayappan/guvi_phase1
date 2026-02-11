@@ -1,7 +1,7 @@
 /* Collaboration section styles */
 
 .collaboration-section {
-  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #ec4899 100%);
   color: white;
   padding: 80px 20px;
 }
@@ -34,9 +34,10 @@
 }
 
 .collaboration-text h3 {
-  color: var(--accent-light);
+  color: #fbbf24;
   margin-bottom: 1.5rem;
   font-size: 1.75rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .collaboration-text p {
@@ -51,9 +52,10 @@
 }
 
 .benefits-list h3 {
-  color: var(--accent-light);
+  color: #fbbf24;
   margin-bottom: 1.5rem;
   font-size: 1.75rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .benefits-list ul {
@@ -79,14 +81,15 @@
   flex-shrink: 0;
   width: 24px;
   height: 24px;
-  background: var(--accent-light);
+  background: linear-gradient(135deg, #fbbf24 0%, #fcd34d 100%);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--primary-dark);
+  color: #7c3aed;
   font-weight: 700;
   font-size: 0.9rem;
+  box-shadow: 0 4px 12px rgba(251, 191, 36, 0.3);
 }
 
 @media (max-width: 1024px) {

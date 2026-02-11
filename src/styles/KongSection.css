@@ -1,7 +1,7 @@
 /* Kong section styles */
 
 .kong-section {
-  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  background: linear-gradient(135deg, #f0f9ff 0%, #fef3f8 50%, #fffbeb 100%);
   padding: 80px 20px;
 }
 
@@ -20,13 +20,14 @@
 }
 
 .highlight-card {
-  background: white;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(240, 249, 255, 0.8) 100%);
   padding: 2rem;
-  border-radius: 12px;
-  border-left: 4px solid var(--accent);
-  box-shadow: var(--shadow-md);
+  border-radius: 16px;
+  border-left: 5px solid var(--accent);
+  box-shadow: 0 8px 20px rgba(236, 72, 153, 0.15);
   transition: all 0.3s ease;
   position: relative;
+  backdrop-filter: blur(10px);
 }
 
 .highlight-card:hover {
